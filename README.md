@@ -16,8 +16,8 @@ Many poisonous mushrooms look very similar to edible ones. A quick, reliable che
 ## What I did
 
 1. **Loaded the data** with pandas and added column names.
-2. **Checked for missing values.** A normal check found none, because missing values were stored as `?`. The `stalk-root` column had 2,480 of them (about 30%), so I removed that column.
-3. **Prepared features and target.** Split the table into clues (X) and answers (y), then used **one-hot encoding** to turn the letters into 0/1 columns (21 features became 112 columns).
+2. **Checked for missing values.** The `stalk-root` column had 2,480 of them (about 30%), so I removed that column.
+3. **Prepared features and target.** Split the table into clues (X) and answers (y), then used **one-hot encoding** to turn the letters into 0/1 columns.
 4. **Split the data** into 80% for training (6,499 mushrooms) and 20% for testing (1,625 mushrooms).
 5. **Trained two models:** a Decision Tree and KNN with k = 5.
 6. **Evaluated** both with accuracy and a confusion matrix.
